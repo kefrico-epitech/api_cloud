@@ -23,9 +23,9 @@ const storage = multer.diskStorage({
 
 const singleUpload = multer({ storage: storage }).single('file');
 
-const multiUpload = multer({ 
+const multiUpload = multer({
     storage: storage,
-    limits: { 
+    limits: {
         files: 5 // Change this value according to your requirement
     }
 }).array('files');
@@ -178,6 +178,10 @@ app.get('/files/:type', (req, res) => {
         res.send({ files: filteredFiles });
     });
 });
+
+app.get('/', (req, res) => {
+    res.send("Welcome to api cloud média API REST FULL 🙃");
+})
 
 app.listen(port, () => {
     console.log(`Serveur démarré sur le port ${port}`.cyan);
