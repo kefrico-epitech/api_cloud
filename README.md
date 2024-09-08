@@ -21,7 +21,7 @@ Ce projet est une API REST construite avec Node.js et Express.js permettant le t
 
 1. Clonez le dépôt :
     ```bash
-    git clone https://github.com/username/repo-name.git
+    git clone https://github.com/kefrico-epitech/api_cloud.git
     ```
 
 2. Accédez au dossier du projet :
